@@ -1,0 +1,73 @@
+:root {
+    --navyblue: rgb(8, 7, 15);
+    --mysticDreams: linear-gradient(#2b86c5,#784ba0,#ff3cac);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background: var(--navyblue);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0.5em 0em 0.5em 0em;
+    
+    color: white;
+    background-image: var(--mysticDreams);
+    background-clip: text;
+    color: transparent;
+}
+
+.container {
+    height: 20em;
+    width: 30em;
+    padding: 1em;
+    border: 0.5em solid white;
+    border-radius: 2em;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.txt {
+    margin: 2em auto 0 ;
+}
+
+.input {
+    font-size: 1em;
+    font-weight: bolder;
+    border-radius: 1em;
+    border: none;
+    margin-bottom: 0.5em;
+    padding: 1em;
+    height: 2em;
+    width: 16em;    
+}
+
+button {
+    font-weight: bold;
+    width: 7em;
+    height: 2em;
+    background-color: #784ba0;
+    border: none;
+    border-radius: 1em;
+}
+
+.form {
+    height: 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

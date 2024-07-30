@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+:root {
+    --navyblue: rgb(31, 28, 53);
+    --mysticDreams: linear-gradient(220deg, #2b86c5, #784ba0, #ff3cac);
+}
+
+h1{
+    background: var(--mysticDreams);
+    background-clip: text;
+    color: transparent;
+    font-size: 4em;
+    margin-top: 1em;
+}
+
+body {
+    display: flex;
+    gap: 4em;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(14, 12, 24);
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.container {
+    height: 12em;
+    width: 42em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    background-color: var(--navyblue);
+    box-shadow: 1em 1em 0em;
+}
+
+.box {
+    width: 35em;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#current-time {
+    font-size: 70px;
+    color: lightblue;
+}
+
+.alarm {
+    background-color: var(--navyblue);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 0 1em;
+}
+
+.alarm input {
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 0.2em;
+    border: none;
+    border-radius: 0.5em;
+    transition: 0.2s;
+}
+
+.alarm button {
+    font-size: medium;
+    font-weight: bold;
+    padding: 0.2em;
+    border: none;
+    border-radius: 0.5em;
+    transition: 0.2s;
+}
+
+.alarm button:hover {
+    background-color: rgb(109, 107, 121);
+}
+
+.alarm input:hover {
+    background-color: rgb(109, 107, 121);
+}
+
+.alarm-set-bac {
+    background-color: red;
+}

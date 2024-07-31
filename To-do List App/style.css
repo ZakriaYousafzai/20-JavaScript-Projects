@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --navyblue: rgb(14, 12, 24);
+    --mysticDreams: linear-gradient(220deg, #2b86c5, #784ba0, #ff3cac);
+}
+
+body {
+    font-family: sans-serif;
+    background-color: var(--navyblue);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todo-container {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 1em 1em black;
+    border: 0.2em solid ;
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+#new-todo {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#add-todo {
+    background-color: var(--navyblue);
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#add-todo:hover {
+    background-color: rgb(27, 23, 43);
+}
+
+#todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+#todo-list li {
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    user-select: none;
+}
+
+#todo-list li div {
+    display: flex;
+    align-items: center;
+}
+
+#todo-list li.completed span {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+#todo-list li div input {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+#todo-list li button {
+    background-color: transparent;
+    border: none;
+    color: #ff0000;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#todo-list li button:hover {
+    color: #ff8585;
+}

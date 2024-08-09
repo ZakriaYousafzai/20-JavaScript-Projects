@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    padding: 2em 0 0 0;
+    background-color: lightcyan;
+
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    border: 2px solid;
+    height: 35em;
+    width: 30em;
+    border-radius: 1em;
+    padding: 1em;
+    background-color: yellow;
+    box-shadow: 0.2em 0.2em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.screen {
+    border: 2px solid;
+    width: 100%;
+    height: 50%;
+    padding: 1em;
+    background-color: rgb(206, 206, 206);
+    box-shadow: 0.2em 0.2em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.screen-nav {
+    /* border: 2px solid; */
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.screen-nav span {
+    /* border: 2px solid; */
+    background-color: white;
+    padding: 0.5em;
+    border-radius: 1em;
+}
+
+.screen-img {
+    /* border: 2px solid; */
+    width: 90%;
+    height: 80%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.screen-img img {
+    width: 9em;
+    box-shadow: none;
+}
+
+.score-board {
+    border: 2px solid;
+    width: 100%;
+    height: 10%;
+    background-color: rgb(206, 206, 206);
+    color: black;
+    box-shadow: 0.2em 0.2em;
+    font-weight: bold;
+    font-size: 1.5em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result-board {
+    width: 70%;
+    height: 1%;
+    color: black;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.restart {
+    border: 1px solid;
+    width: 40%;
+    height: 10%;
+    border-radius: 1em;
+    background-color: lightgreen;
+    box-shadow: 0.2em 0.2em;
+    font-weight: bold;
+    font-size: 1.5em;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.restart:hover {
+    box-shadow: none;
+}
+
+.rps-buttons {
+    /* border: 2px solid; */
+    width: 100%;
+    height: 20%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+img {
+    border: 2px solid;
+    border-radius: 1em;
+    width: 4em;
+    padding: 0.5em;
+    background-color: lightgreen;
+    box-shadow: 0.2em 0.2em;
+}
+
+.rps-buttons img:hover {
+    box-shadow: none;
+    cursor: pointer;
+}
